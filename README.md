@@ -185,10 +185,11 @@ storeData(self, data=True)
 ```
 * Enables or disables saving the robot's joint data to a CSV file.
 
-# Conclusion
-By combining forward kinematics (to determine where the robot's end-effector is) and inverse kinematics (to calculate how to move the robot's joints to reach a desired position), this project enables intuitive control of the KUKA iiwa robot within the PyBullet simulation environment.
-
 ```
 write_data(self, data)
 ```
 * Writes joint data into a CSV file (only if storeData is enabled). This can be used for logging joint positions over time.
+
+
+# Conclusion
+By combining forward kinematics (to determine where the robot's end-effector is) and inverse kinematics (to calculate how to move the robot's joints to reach a desired position), this project enables intuitive control of the KUKA iiwa robot within the PyBullet simulation environment.
