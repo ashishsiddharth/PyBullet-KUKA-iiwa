@@ -1,6 +1,8 @@
 #https://usermanual.wiki/Document/pybullet20quickstart20guide.479068914.pdf
+#Tested python 3.7, 3.11
+#Ashish Siddharth, IIT ISM Dhanbad
+
 # press w for skleton view
-#tested python 3.7.3
 
 import pybullet as p
 import pybullet_data
