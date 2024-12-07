@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<robot  name="sphere">
+  <link  name="sphere">
+  
+    <inertial>
+      <origin xyz="-1.1481E-17 0 0" rpy="0 0 0" />
+      <mass value="5" />
+      <inertia ixx="52.36" ixy="0" ixz="0" iyy="52.36" iyz="0" izz="52.36" />
+    </inertial>
+	
+    <visual>
+      <origin xyz="0 0 0" rpy="1.5707963267949 0 0" />
+	  
+      <geometry>
+			<mesh filename="meshes/sphere.STL" />
+      </geometry>
+	  
+      <material name="">
+        <color rgba="0 0 1 1" />		
+        <texture filename="textures/" />
+      </material>
+	  
+    </visual>
+	
+    <collision>
+      <origin xyz="0 0 0" rpy="1.5707963267949 0 0" />
+	  
+      <geometry>
+        <mesh filename="meshes/sphere.STL" />
+      </geometry>
+	  
+    </collision>
+  </link>
+</robot>
