@@ -1,5 +1,8 @@
 # PyBullet-KUKA-iiwa
-KUKA iiwa Robot Simulation with PyBullet
+KUKA iiwa Robot Simulation with PyBullet<br />
+<br />
+
+This project provides a framework to simulate and control the KUKA iiwa 7-DOF robotic arm in a 3D environment using the PyBullet physics engine. The robot interacts with the environment, tracks spheres, and can store joint positions into a CSV file. The class pyRobot serves as the core of the simulation, allowing you to load the robot, manipulate it, and manage the simulation environment.
 
 Notes:<br />
 1. Ensure you have PyBullet and NumPy installed to run this code.<br />
@@ -7,6 +10,17 @@ Notes:<br />
 3. The simulation is set to real-time mode, so you can interact with the robot and objects dynamically.<br />
 4. You can optionally log joint states by enabling the storeData function.<br />
 
+#Installation
+* 1. Install the required dependencies:
+```
+pip install pybullet numpy
+```
+
+* 2. Clone this repository:
+```
+git clone https://github.com/your-username/pyDualArm.git
+cd pyDualArm
+```
 
 ### Sample program
 ```
@@ -170,6 +184,9 @@ trackSphere3(self, x=0, y=0, z=0)
 storeData(self, data=True)
 ```
 * Enables or disables saving the robot's joint data to a CSV file.
+
+# Conclusion
+By combining forward kinematics (to determine where the robot's end-effector is) and inverse kinematics (to calculate how to move the robot's joints to reach a desired position), this project enables intuitive control of the KUKA iiwa robot within the PyBullet simulation environment.
 
 ```
 write_data(self, data)
